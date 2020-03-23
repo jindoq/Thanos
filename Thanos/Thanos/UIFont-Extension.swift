@@ -36,16 +36,16 @@ extension UIFont {
         }
     }
     
-    static func registerFonts() {
+    public static func registerFonts() {
         try! UIFont.register(fileNameString: "Roboto-Bold", type: "ttf")
         try! UIFont.register(fileNameString: "Roboto-Medium", type: "ttf")
     }
     
-    static func regular(_ fontSize: CGFloat = 17) -> UIFont {
+    public static func regular(_ fontSize: CGFloat = 17) -> UIFont {
         return UIFont(name: "Roboto-Medium", size: fontSize)!
     }
     
-    static func bold(_ fontSize: CGFloat = 17) -> UIFont {
+    public static func bold(_ fontSize: CGFloat = 17) -> UIFont {
         return UIFont(name: "Roboto-Bold", size: fontSize)!
     }
 

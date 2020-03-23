@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 let padding: CGFloat = 20
-struct UIMaker {    
-    static func makeBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 15, isBold: Bool = false, bgColor: UIColor = UIColor.PAVE.purple.withAlphaComponent(0.9)) -> ThanosButton {
+public struct UIMaker {
+    public static func makeBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 17, isBold: Bool = false, bgColor: UIColor = UIColor.Thanos.green) -> ThanosButton {
         let btn = ThanosButton()
         btn.titleLabel?.font = UIFont.bold(fontSize)
         btn.setTitleColor(color, for: .normal)
@@ -23,7 +23,7 @@ struct UIMaker {
         return btn
     }
     
-    static func makeLbl(text: String? = nil, color: UIColor = .white, bgColor: UIColor = .clear, fontSize: CGFloat = 15, isBold: Bool = false, align: NSTextAlignment = .center, padding: Bool = false) -> UILabel {
+    public static func makeLbl(text: String? = nil, color: UIColor = .white, bgColor: UIColor = .clear, fontSize: CGFloat = 17, isBold: Bool = false, align: NSTextAlignment = .center, padding: Bool = false) -> UILabel {
         let lbl = padding ? PaddingLabel() : UILabel()
         lbl.text = text
         lbl.backgroundColor = bgColor

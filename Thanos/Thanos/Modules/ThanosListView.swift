@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
+public class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
     lazy var table: UITableView = {
         let tb = UITableView()
         tb.delegate = self
         tb.dataSource = self
         tb.separatorStyle = .none
-        tb.backgroundColor = UIColor.PAVE.purple.withAlphaComponent(0.9)
+        tb.backgroundColor = .clear
         tb.showsVerticalScrollIndicator = false
         tb.register(C.self, forCellReuseIdentifier: "Cell")
         tb.rowHeight = UITableView.automaticDimension
@@ -31,13 +31,13 @@ class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSource,
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! C
         cell.configCell(datasource[indexPath.row])
         return cell

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ThanosView: UIView {
+public class ThanosView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()

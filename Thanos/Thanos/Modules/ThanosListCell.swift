@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class ThanosListCell<U>: ThanosCell {
+public class ThanosListCell<U>: ThanosCell {
     func configCell(_ data: U) {}
 }

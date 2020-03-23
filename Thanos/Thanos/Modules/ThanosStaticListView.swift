@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ThanosStaticListView: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
+public class ThanosStaticListView: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
     lazy var table: UITableView = {
         let tb = UITableView()
         tb.delegate = self
@@ -24,11 +24,11 @@ class ThanosStaticListView: ThanosCtr, UITableViewDataSource, UITableViewDelegat
     
     var datasource = [ThanosCell]()
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return datasource[indexPath.row]
     }
 }

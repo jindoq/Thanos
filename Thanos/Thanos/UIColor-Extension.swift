@@ -10,9 +10,16 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    struct PAVE {
-        static let purple = UIColor.color(r: 50, g: 24, b: 63)
-        static let green = UIColor.color(r: 52, g: 206, b: 138)
+    public struct Thanos {
+        public static let green = UIColor.color(hex: "2ECC71")
+        public static let red = UIColor.color(hex: "E74C3C")
+        public static let orange = UIColor.color(hex: "E67E22")
+        public static let yellow = UIColor.color(hex: "F1C40F")
+        public static let blue = UIColor.color(hex: "3498DB")
+        public static let purple = UIColor.color(hex: "9B59B6")
+        public static let gray = UIColor.color(hex: "95A5A6")
+        public static let lightGray = UIColor.color(hex: "CCCCCC")
+        public static let superLightGray = UIColor.color(hex: "ECF0F1")
     }
     
     func adjustBrightness(_ amount:CGFloat) -> UIColor {

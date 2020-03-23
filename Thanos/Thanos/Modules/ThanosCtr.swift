@@ -9,10 +9,8 @@
 import Foundation
 import UIKit
 
-class ThanosCtr: UIViewController {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
-    }
+public class ThanosCtr: UIViewController {
+    
 }
 
 extension UIViewController {

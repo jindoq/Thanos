@@ -95,6 +95,9 @@
 		0418E91F2427661100583DCD /* ThanosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90F2427661100583DCD /* ThanosWorker.swift */; };
 		0418E9202427661100583DCD /* ThanosError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9102427661100583DCD /* ThanosError.swift */; };
 		0418E922242766E700583DCD /* UIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E921242766E600583DCD /* UIMaker.swift */; };
+		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
+		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
+		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +191,9 @@
 		0418E90F2427661100583DCD /* ThanosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosWorker.swift; sourceTree = "<group>"; };
 		0418E9102427661100583DCD /* ThanosError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosError.swift; sourceTree = "<group>"; };
 		0418E921242766E600583DCD /* UIMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMaker.swift; sourceTree = "<group>"; };
+		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
+		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
+		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +329,7 @@
 		0418E8FE2427661100583DCD /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				0423140F24283680007A0621 /* PMAlert */,
 				0418E8FF2427661100583DCD /* ZFRippleButton.swift */,
 			);
 			path = Libs;
@@ -359,6 +366,16 @@
 				0418E9102427661100583DCD /* ThanosError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0423140F24283680007A0621 /* PMAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0423141024283680007A0621 /* PMAlertAction.swift */,
+				0423141124283680007A0621 /* PMAlertController.swift */,
+				0423141224283680007A0621 /* PMAlertController.xib */,
+			);
+			path = PMAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
 				0418E9142427661100583DCD /* Roboto-Bold.ttf in Resources */,
 				0418E9132427661100583DCD /* Roboto-Medium.ttf in Resources */,
 			);
@@ -445,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0418E922242766E700583DCD /* UIMaker.swift in Sources */,
+				0423141424283680007A0621 /* PMAlertController.swift in Sources */,
 				0418E8D82427659500583DCD /* ConstraintMultiplierTarget.swift in Sources */,
 				0418E8D22427659500583DCD /* Protector.swift in Sources */,
 				0418E91E2427661100583DCD /* ThanosNetwork.swift in Sources */,
@@ -493,6 +512,7 @@
 				0418E8E32427659500583DCD /* ConstraintPriority.swift in Sources */,
 				0418E8DA2427659500583DCD /* ConstraintDescription.swift in Sources */,
 				0418E91C2427661100583DCD /* ThanosButton.swift in Sources */,
+				0423141324283680007A0621 /* PMAlertAction.swift in Sources */,
 				0418E8C72427659500583DCD /* HTTPMethod.swift in Sources */,
 				0418E8D12427659500583DCD /* Request.swift in Sources */,
 				0418E8EA2427659500583DCD /* ConstraintLayoutGuide.swift in Sources */,
