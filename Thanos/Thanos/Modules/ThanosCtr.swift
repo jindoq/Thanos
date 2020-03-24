@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-public class ThanosCtr: UIViewController {
+open class ThanosCtr: UIViewController {
     
 }
 
 extension UIViewController {
-    func present(_ vc: UIViewController) {
+    open func present(_ vc: UIViewController) {
         vc.modalPresentationStyle = .fullScreen
         DispatchQueue.main.async {
             self.present(vc, animated: true, completion: nil)

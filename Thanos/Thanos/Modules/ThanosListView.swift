@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-public class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
-    lazy var table: UITableView = {
+open class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSource, UITableViewDelegate {
+    open lazy var table: UITableView = {
         let tb = UITableView()
         tb.delegate = self
         tb.dataSource = self
@@ -23,7 +23,7 @@ public class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewData
         return tb
     }()
     
-    var datasource = [T]() {
+    open var datasource = [T]() {
         didSet {
             DispatchQueue.main.async {
                 self.table.reloadData()

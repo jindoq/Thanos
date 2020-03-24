@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-public class ThanosView: UIView {
+open class ThanosView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {}
+    open func setupView() {}
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let padding: CGFloat = 20
+public let padding: CGFloat = 20
 public struct UIMaker {
     public static func makeBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 17, isBold: Bool = false, bgColor: UIColor = UIColor.Thanos.green) -> ThanosButton {
         let btn = ThanosButton()

@@ -80,8 +80,6 @@
 		0418E8FC2427659500583DCD /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E8B62427659500583DCD /* ConstraintMakerRelatable.swift */; };
 		0418E9112427661100583DCD /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E8FD2427661100583DCD /* UIColor-Extension.swift */; };
 		0418E9122427661100583DCD /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E8FF2427661100583DCD /* ZFRippleButton.swift */; };
-		0418E9132427661100583DCD /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0418E9012427661100583DCD /* Roboto-Medium.ttf */; };
-		0418E9142427661100583DCD /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0418E9022427661100583DCD /* Roboto-Bold.ttf */; };
 		0418E9152427661100583DCD /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9032427661100583DCD /* UIView-Extension.swift */; };
 		0418E9162427661100583DCD /* ThanosListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9052427661100583DCD /* ThanosListCell.swift */; };
 		0418E9172427661100583DCD /* ThanosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9062427661100583DCD /* ThanosListView.swift */; };
@@ -98,6 +96,7 @@
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
+		29E413702429F17A00683113 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 29E4136F2429F17A00683113 /* Font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,8 +175,6 @@
 		0418E8B62427659500583DCD /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		0418E8FD2427661100583DCD /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		0418E8FF2427661100583DCD /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
-		0418E9012427661100583DCD /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		0418E9022427661100583DCD /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		0418E9032427661100583DCD /* UIView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		0418E9052427661100583DCD /* ThanosListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosListCell.swift; sourceTree = "<group>"; };
 		0418E9062427661100583DCD /* ThanosListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosListView.swift; sourceTree = "<group>"; };
@@ -194,6 +191,7 @@
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		29E4136F2429F17A00683113 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +224,7 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
-				0418E9002427661100583DCD /* Font */,
+				29E4136F2429F17A00683113 /* Font */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
 				0418E90D2427661100583DCD /* Network */,
@@ -335,15 +333,6 @@
 			path = Libs;
 			sourceTree = "<group>";
 		};
-		0418E9002427661100583DCD /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				0418E9012427661100583DCD /* Roboto-Medium.ttf */,
-				0418E9022427661100583DCD /* Roboto-Bold.ttf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 		0418E9042427661100583DCD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,8 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
-				0418E9142427661100583DCD /* Roboto-Bold.ttf in Resources */,
-				0418E9132427661100583DCD /* Roboto-Medium.ttf in Resources */,
+				29E413702429F17A00683113 /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
