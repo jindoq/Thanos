@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Thanos"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "The power of Thanos."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  This is Thanos. I'm a god, I will decrease all everything to half. Bring spiderman, iron man, caption
+  This is Thanos. I'm a god, I will decrease all everything to half. Bring spiderman, iron man, caption to here
                    DESC
 
   spec.homepage     = "https://github.com/jindoq/Thanos.git"
