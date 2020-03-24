@@ -13,7 +13,7 @@ public let padding: CGFloat = 20
 public struct UIMaker {
     public static func makeBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 17, isBold: Bool = false, bgColor: UIColor = UIColor.Thanos.green) -> ThanosButton {
         let btn = ThanosButton()
-        btn.titleLabel?.font = UIFont.bold(fontSize)
+        btn.titleLabel?.font = isBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)
         btn.setTitleColor(color, for: .normal)
         btn.setTitle(text, for: .normal)
         btn.backgroundColor = bgColor
@@ -28,7 +28,7 @@ public struct UIMaker {
         lbl.text = text
         lbl.backgroundColor = bgColor
         lbl.textColor = color
-        lbl.font = isBold ? UIFont.bold(fontSize) : UIFont.regular(fontSize)
+        lbl.font = isBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)
         lbl.textAlignment = align
         lbl.lineBreakMode = .byWordWrapping
         lbl.numberOfLines = 0

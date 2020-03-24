@@ -88,7 +88,6 @@
 		0418E91A2427661100583DCD /* ThanosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9092427661100583DCD /* ThanosView.swift */; };
 		0418E91B2427661100583DCD /* ThanosStaticListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90A2427661100583DCD /* ThanosStaticListView.swift */; };
 		0418E91C2427661100583DCD /* ThanosButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90B2427661100583DCD /* ThanosButton.swift */; };
-		0418E91D2427661100583DCD /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90C2427661100583DCD /* UIFont-Extension.swift */; };
 		0418E91E2427661100583DCD /* ThanosNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90E2427661100583DCD /* ThanosNetwork.swift */; };
 		0418E91F2427661100583DCD /* ThanosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90F2427661100583DCD /* ThanosWorker.swift */; };
 		0418E9202427661100583DCD /* ThanosError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9102427661100583DCD /* ThanosError.swift */; };
@@ -96,7 +95,6 @@
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
-		29E413702429F17A00683113 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 29E4136F2429F17A00683113 /* Font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,7 +181,6 @@
 		0418E9092427661100583DCD /* ThanosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosView.swift; sourceTree = "<group>"; };
 		0418E90A2427661100583DCD /* ThanosStaticListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosStaticListView.swift; sourceTree = "<group>"; };
 		0418E90B2427661100583DCD /* ThanosButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosButton.swift; sourceTree = "<group>"; };
-		0418E90C2427661100583DCD /* UIFont-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-Extension.swift"; sourceTree = "<group>"; };
 		0418E90E2427661100583DCD /* ThanosNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosNetwork.swift; sourceTree = "<group>"; };
 		0418E90F2427661100583DCD /* ThanosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosWorker.swift; sourceTree = "<group>"; };
 		0418E9102427661100583DCD /* ThanosError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosError.swift; sourceTree = "<group>"; };
@@ -191,7 +188,6 @@
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
-		29E4136F2429F17A00683113 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,12 +220,10 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
-				29E4136F2429F17A00683113 /* Font */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
 				0418E90D2427661100583DCD /* Network */,
 				0418E8FD2427661100583DCD /* UIColor-Extension.swift */,
-				0418E90C2427661100583DCD /* UIFont-Extension.swift */,
 				0418E9032427661100583DCD /* UIView-Extension.swift */,
 				0418E921242766E600583DCD /* UIMaker.swift */,
 				0418E86F2427659500583DCD /* Alamofire */,
@@ -439,7 +433,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
-				29E413702429F17A00683113 /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +448,6 @@
 				0418E8D82427659500583DCD /* ConstraintMultiplierTarget.swift in Sources */,
 				0418E8D22427659500583DCD /* Protector.swift in Sources */,
 				0418E91E2427661100583DCD /* ThanosNetwork.swift in Sources */,
-				0418E91D2427661100583DCD /* UIFont-Extension.swift in Sources */,
 				0418E8FC2427659500583DCD /* ConstraintMakerRelatable.swift in Sources */,
 				0418E8C42427659500583DCD /* RedirectHandler.swift in Sources */,
 				0418E9192427661100583DCD /* ThanosCell.swift in Sources */,
