@@ -95,6 +95,7 @@
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
+		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 				0418E8912427659500583DCD /* SnapKit */,
 				0418E8672427654900583DCD /* Thanos.h */,
 				0418E8682427654900583DCD /* Info.plist */,
+				04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */,
 			);
 			path = Thanos;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */,
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

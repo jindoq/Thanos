@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 
 open class ThanosCtr: UIViewController {
+    open func setupAds() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_back", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(showAds))
+    }
     
+    @objc open func showAds() {}
 }
 
 extension UIViewController {

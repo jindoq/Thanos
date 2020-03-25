@@ -22,7 +22,13 @@ open class ThanosStaticListView: ThanosCtr, UITableViewDataSource, UITableViewDe
         return tb
     }()
     
-    open var datasource = [ThanosCell]()
+    open var datasource = [ThanosCell]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.table.reloadData()
+            }
+        }
+    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
