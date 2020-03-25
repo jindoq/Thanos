@@ -95,6 +95,7 @@
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
+		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +189,7 @@
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 		0418E9042427661100583DCD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */,
 				0418E9052427661100583DCD /* ThanosListCell.swift */,
 				0418E9062427661100583DCD /* ThanosListView.swift */,
 				0418E9072427661100583DCD /* ThanosCtr.swift */,
@@ -455,6 +458,7 @@
 				0418E9162427661100583DCD /* ThanosListCell.swift in Sources */,
 				0418E8F12427659500583DCD /* ConstraintRelation.swift in Sources */,
 				0418E91F2427661100583DCD /* ThanosWorker.swift in Sources */,
+				29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */,
 				0418E8E52427659500583DCD /* ConstraintDirectionalInsetTarget.swift in Sources */,
 				0418E8E42427659500583DCD /* ConstraintInsetTarget.swift in Sources */,
 				0418E8B72427659500583DCD /* MultipartFormData.swift in Sources */,

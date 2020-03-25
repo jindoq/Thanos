@@ -31,7 +31,7 @@ open class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSo
         }
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
