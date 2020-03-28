@@ -1,2 +1,2 @@
 # Thanos
-This is my framework
+This is Tran Duy Tu framework

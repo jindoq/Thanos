@@ -35,11 +35,11 @@ extension UIColor {
         return self
     }
     
-    static func color(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1) -> UIColor {
+    public static func color(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1) -> UIColor {
         return UIColor(red: r / 255, green: g / 255, blue: b / 255, alpha: alpha)
     }
     
-    static func color(hex: String, alpha: CGFloat = 1) -> UIColor {
+    public static func color(hex: String, alpha: CGFloat = 1) -> UIColor {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
         if (cString.hasPrefix("#")) {

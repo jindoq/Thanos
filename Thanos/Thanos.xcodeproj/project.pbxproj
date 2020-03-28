@@ -95,6 +95,8 @@
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
+		043608DE242F8814009D0DA5 /* ThanosGridCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DC242F8814009D0DA5 /* ThanosGridCtr.swift */; };
+		043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DD242F8814009D0DA5 /* ThanosGridView.swift */; };
 		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
 /* End PBXBuildFile section */
@@ -190,6 +192,8 @@
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		043608DC242F8814009D0DA5 /* ThanosGridCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridCtr.swift; sourceTree = "<group>"; };
+		043608DD242F8814009D0DA5 /* ThanosGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridView.swift; sourceTree = "<group>"; };
 		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -343,6 +347,8 @@
 				0418E9092427661100583DCD /* ThanosView.swift */,
 				0418E90A2427661100583DCD /* ThanosStaticListView.swift */,
 				0418E90B2427661100583DCD /* ThanosButton.swift */,
+				043608DC242F8814009D0DA5 /* ThanosGridCtr.swift */,
+				043608DD242F8814009D0DA5 /* ThanosGridView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 				0418E8EC2427659500583DCD /* Typealiases.swift in Sources */,
 				0418E8CC2427659500583DCD /* Validation.swift in Sources */,
 				0418E8EE2427659500583DCD /* ConstraintOffsetTarget.swift in Sources */,
+				043608DE242F8814009D0DA5 /* ThanosGridCtr.swift in Sources */,
 				0418E8ED2427659500583DCD /* ConstraintConstantTarget.swift in Sources */,
 				0418E8E22427659500583DCD /* ConstraintMakerExtendable.swift in Sources */,
 				0418E8CB2427659500583DCD /* RequestTaskMap.swift in Sources */,
@@ -534,6 +541,7 @@
 				0418E91A2427661100583DCD /* ThanosView.swift in Sources */,
 				0418E8F32427659500583DCD /* ConstraintView+Extensions.swift in Sources */,
 				0418E8BB2427659500583DCD /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */,
 				0418E8F42427659500583DCD /* ConstraintItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
