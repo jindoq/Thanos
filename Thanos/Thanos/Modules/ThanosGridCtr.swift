@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Thanos
 
 open class ThanosGridCtr<C: ThanosGridCell<U>, U>: ThanosCtr, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     open var datasource = [U]() {

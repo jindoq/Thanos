@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Thanos"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "The power of Thanos."
 
   # This description is used to generate tags and improve search results.
@@ -107,6 +107,14 @@ Pod::Spec.new do |spec|
   #
 
   spec.resource  = "Thanos/**/*.xcassets"
+
+  spec.resource = "Thanos/**/*.xib"
+  spec.resource_bundles = {
+    'Thanos' => [
+        'Thanos/**/*.xib'
+    ]
+  }
+
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"

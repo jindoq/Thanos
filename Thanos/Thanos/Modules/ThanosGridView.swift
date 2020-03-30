@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Thanos
 
 open class ThanosCollectionCell: UICollectionViewCell {
     override init(frame: CGRect) {

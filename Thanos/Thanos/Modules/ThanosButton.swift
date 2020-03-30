@@ -11,7 +11,7 @@ import QuartzCore
 
 @IBDesignable
 open class ThanosButton: UIButton {
-    func setProcessing(visible: Bool, style: UIActivityIndicatorView.Style = .white) {
+    public func setProcessing(visible: Bool, style: UIActivityIndicatorView.Style = .white) {
         if visible {
             titleLabel?.layer.opacity = 0
             isEnabled = false
