@@ -33,11 +33,11 @@ open class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSo
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! C
         cell.configCell(datasource[indexPath.row])
         return cell

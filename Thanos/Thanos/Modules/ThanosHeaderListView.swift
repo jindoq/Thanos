@@ -34,21 +34,21 @@ open class ThanosHeaderListView<H: ThanosListHeader<B>, B, C: ThanosListCell<T>,
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource[section].cells.count
     }
     
-    public func numberOfSections(in tableView: UITableView) -> Int {
+    open func numberOfSections(in tableView: UITableView) -> Int {
         return datasource.count
     }
     
-    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as? H
         header?.configHeader(datasource[section].header)
         return header
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! C
         cell.configCell(datasource[indexPath.section].cells[indexPath.row])
         return cell
@@ -74,7 +74,7 @@ open class ThanosListHeader<B>: ThanosHeader {
 
 open class ThanosDefaultHeader: ThanosListHeader<String> {
     lazy var titleLbl: UILabel = {
-        return UIMaker.makeLbl(text: "hello", color: .black, isBold: true, align: .left)
+        return UIMaker.makeTitleLbl(text: " ")
     }()
     
     open override func setupView() {

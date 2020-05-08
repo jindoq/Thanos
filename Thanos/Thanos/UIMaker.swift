@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public let padding: CGFloat = 20
+public let padding: CGFloat = 16
 public struct UIMaker {
-    public static func makeBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 17, isBold: Bool = false, bgColor: UIColor = UIColor.Thanos.green) -> ThanosButton {
+    public static func makeActionBtn(text: String? = nil, color: UIColor = .white, fontSize: CGFloat = 16, isBold: Bool = false, bgColor: UIColor = UIColor.Thanos.green) -> ThanosButton {
         let btn = ThanosButton()
         btn.titleLabel?.font = isBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)
         btn.setTitleColor(color, for: .normal)
@@ -23,35 +23,28 @@ public struct UIMaker {
         return btn
     }
     
-    public static func makeLbl(text: String? = nil, color: UIColor = .white, bgColor: UIColor = .clear, fontSize: CGFloat = 17, isBold: Bool = false, align: NSTextAlignment = .center, padding: Bool = false) -> UILabel {
-        let lbl = padding ? PaddingLabel() : UILabel()
+    public static func makeTitleLbl(text: String? = nil, fontSize: CGFloat = 16, color: UIColor = .black, bgColor: UIColor = .clear, align: NSTextAlignment = .left) -> UILabel {
+        let lbl = UILabel()
         lbl.text = text
         lbl.backgroundColor = bgColor
         lbl.textColor = color
-        lbl.font = isBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)
+        lbl.font = UIFont.boldSystemFont(ofSize: fontSize)
         lbl.textAlignment = align
         lbl.lineBreakMode = .byWordWrapping
         lbl.numberOfLines = 0
-        lbl.createCorner(4)
+        return lbl
+    }
+    
+    public static func makeContentLbl(text: String? = nil, fontSize: CGFloat = 16, color: UIColor = .black, bgColor: UIColor = .clear, align: NSTextAlignment = .left) -> UILabel {
+        let lbl = UILabel()
+        lbl.text = text
+        lbl.backgroundColor = bgColor
+        lbl.textColor = color
+        lbl.font = UIFont.systemFont(ofSize: fontSize)
+        lbl.textAlignment = align
+        lbl.lineBreakMode = .byWordWrapping
+        lbl.numberOfLines = 0
         return lbl
     }
 }
 
-class PaddingLabel: UILabel {
-    
-    var topInset: CGFloat = padding/2
-    var bottomInset: CGFloat = padding/2
-    var leftInset: CGFloat = padding
-    var rightInset: CGFloat = padding
-    
-    override func drawText(in rect: CGRect) {
-        let insets = UIEdgeInsets.init(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
-        super.drawText(in: rect.inset(by: insets))
-    }
-    
-    override var intrinsicContentSize: CGSize {
-        let size = super.intrinsicContentSize
-        return CGSize(width: size.width + leftInset + rightInset,
-                      height: size.height + topInset + bottomInset)
-    }
-}

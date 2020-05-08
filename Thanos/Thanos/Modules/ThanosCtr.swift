@@ -24,4 +24,11 @@ extension UIViewController {
             self.present(vc, animated: true, completion: nil)
         }
     }
+    
+    open func push(_ vc: UIViewController) {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
