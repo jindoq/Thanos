@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 open class ThanosCollectionCell: UICollectionViewCell {
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }

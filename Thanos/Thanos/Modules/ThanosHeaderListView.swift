@@ -56,7 +56,7 @@ open class ThanosHeaderListView<H: ThanosListHeader<B>, B, C: ThanosListCell<T>,
 }
 
 open class ThanosHeader: UITableViewHeaderFooterView {
-    override init(reuseIdentifier: String?) {
+    override public init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         setupView()
     }
