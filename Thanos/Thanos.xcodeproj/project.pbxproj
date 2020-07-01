@@ -99,7 +99,6 @@
 		043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DD242F8814009D0DA5 /* ThanosGridView.swift */; };
 		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
-		2B4F44222A9D7402EEF3B0EC /* Pods_Thanos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,10 +195,7 @@
 		043608DC242F8814009D0DA5 /* ThanosGridCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridCtr.swift; sourceTree = "<group>"; };
 		043608DD242F8814009D0DA5 /* ThanosGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridView.swift; sourceTree = "<group>"; };
 		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thanos.debug.xcconfig"; path = "Target Support Files/Pods-Thanos/Pods-Thanos.debug.xcconfig"; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
-		457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thanos.release.xcconfig"; path = "Target Support Files/Pods-Thanos/Pods-Thanos.release.xcconfig"; sourceTree = "<group>"; };
-		EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thanos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +203,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4F44222A9D7402EEF3B0EC /* Pods_Thanos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +214,6 @@
 			children = (
 				0418E8662427654900583DCD /* Thanos */,
 				0418E8652427654900583DCD /* Products */,
-				CEC932FCBD8B346BD52C8B4C /* Pods */,
-				A522D6CB881A08AAB30645AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -380,24 +373,6 @@
 			path = PMAlert;
 			sourceTree = "<group>";
 		};
-		A522D6CB881A08AAB30645AF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CEC932FCBD8B346BD52C8B4C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */,
-				457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -418,7 +393,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0418E86C2427654900583DCD /* Build configuration list for PBXNativeTarget "Thanos" */;
 			buildPhases = (
-				CEC88CDE8CE0E3E95B17CDD6 /* [CP] Check Pods Manifest.lock */,
 				0418E85F2427654900583DCD /* Headers */,
 				0418E8602427654900583DCD /* Sources */,
 				0418E8612427654900583DCD /* Frameworks */,
@@ -476,31 +450,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CEC88CDE8CE0E3E95B17CDD6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Thanos-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0418E8602427654900583DCD /* Sources */ = {
@@ -722,7 +671,6 @@
 		};
 		0418E86D2427654900583DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -730,10 +678,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Thanos",
-				);
 				INFOPLIST_FILE = Thanos/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -752,7 +696,6 @@
 		};
 		0418E86E2427654900583DCD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -760,10 +703,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Thanos",
-				);
 				INFOPLIST_FILE = Thanos/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
