@@ -22,10 +22,8 @@ typedef struct GAD_BOXABLE GADAdSize GADAdSize;
 ///
 /// @see typedef GADAdSize
 struct GAD_BOXABLE GADAdSize {
-  /// The ad size. Don't modify this value directly.
-  CGSize size;
-  /// Reserved.
-  NSUInteger flags;
+  CGSize size;       ///< The ad size. Don't modify this value directly.
+  NSUInteger flags;  ///< Reserved.
 };
 
 #pragma mark Standard Sizes

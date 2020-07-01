@@ -5,6 +5,7 @@
 //  Copyright 2012 Google LLC. All rights reserved.
 //
 
+#import <GoogleMobileAds/DFPCustomRenderedInterstitialDelegate.h>
 #import <GoogleMobileAds/GADAppEventDelegate.h>
 #import <GoogleMobileAds/GADInterstitial.h>
 
@@ -21,5 +22,9 @@
 
 /// Optional delegate that is notified when creatives send app events.
 @property(nonatomic, weak, nullable) id<GADAppEventDelegate> appEventDelegate;
+
+/// Optional delegate object for custom rendered ads.
+@property(nonatomic, weak, nullable) id<DFPCustomRenderedInterstitialDelegate>
+    customRenderedInterstitialDelegate;
 
 @end
