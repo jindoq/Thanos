@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,15 +99,7 @@
 		043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DD242F8814009D0DA5 /* ThanosGridView.swift */; };
 		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
-		29E9CD0F24AC8B5300935BDC /* Promises-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */; };
-		29E9CD1024AC8B5300935BDC /* NanoPB-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */; };
-		29E9CD1124AC8B5300935BDC /* OpenMeasurement-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */; };
-		29E9CD1224AC8B5300935BDC /* GoogleUtilities-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */; };
-		29E9CD1324AC8B5300935BDC /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */; };
-		29E9CD1424AC8B5300935BDC /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */; };
-		29E9CD1524AC8B5300935BDC /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */; };
-		29E9CD1724AC8B5300935BDC /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */; };
-		29E9CD1924AC912F00935BDC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */; };
+		2B4F44222A9D7402EEF3B0EC /* Pods_Thanos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,16 +196,10 @@
 		043608DC242F8814009D0DA5 /* ThanosGridCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridCtr.swift; sourceTree = "<group>"; };
 		043608DD242F8814009D0DA5 /* ThanosGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridView.swift; sourceTree = "<group>"; };
 		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thanos.debug.xcconfig"; path = "Target Support Files/Pods-Thanos/Pods-Thanos.debug.xcconfig"; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
-		29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
-		29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
-		29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
-		29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
-		29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
-		29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
-		29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
-		29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thanos.release.xcconfig"; path = "Target Support Files/Pods-Thanos/Pods-Thanos.release.xcconfig"; sourceTree = "<group>"; };
+		EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thanos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,11 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E9CD1524AC8B5300935BDC /* nanopb.xcframework in Frameworks */,
-				29E9CD1324AC8B5300935BDC /* GoogleUtilities.xcframework in Frameworks */,
-				29E9CD1924AC912F00935BDC /* GoogleMobileAds.framework in Frameworks */,
-				29E9CD1724AC8B5300935BDC /* GoogleAppMeasurement.framework in Frameworks */,
-				29E9CD1424AC8B5300935BDC /* PromisesObjC.xcframework in Frameworks */,
+				2B4F44222A9D7402EEF3B0EC /* Pods_Thanos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +219,8 @@
 			children = (
 				0418E8662427654900583DCD /* Thanos */,
 				0418E8652427654900583DCD /* Products */,
+				CEC932FCBD8B346BD52C8B4C /* Pods */,
+				A522D6CB881A08AAB30645AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,12 +235,6 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
-				29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */,
-				29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */,
-				29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */,
-				29E9CD0524AC8B4F00935BDC /* Licenses */,
-				29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */,
-				29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
 				0418E90D2427661100583DCD /* Network */,
@@ -402,15 +380,22 @@
 			path = PMAlert;
 			sourceTree = "<group>";
 		};
-		29E9CD0524AC8B4F00935BDC /* Licenses */ = {
+		A522D6CB881A08AAB30645AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */,
-				29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */,
-				29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */,
-				29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */,
+				EA6AF328A9B8F9338018C9EF /* Pods_Thanos.framework */,
 			);
-			path = Licenses;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC932FCBD8B346BD52C8B4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */,
+				457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +418,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0418E86C2427654900583DCD /* Build configuration list for PBXNativeTarget "Thanos" */;
 			buildPhases = (
+				CEC88CDE8CE0E3E95B17CDD6 /* [CP] Check Pods Manifest.lock */,
 				0418E85F2427654900583DCD /* Headers */,
 				0418E8602427654900583DCD /* Sources */,
 				0418E8612427654900583DCD /* Frameworks */,
@@ -484,16 +470,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E9CD1224AC8B5300935BDC /* GoogleUtilities-LICENSE in Resources */,
-				29E9CD1124AC8B5300935BDC /* OpenMeasurement-LICENSE in Resources */,
-				29E9CD1024AC8B5300935BDC /* NanoPB-LICENSE in Resources */,
 				04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */,
-				29E9CD0F24AC8B5300935BDC /* Promises-LICENSE in Resources */,
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEC88CDE8CE0E3E95B17CDD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thanos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0418E8602427654900583DCD /* Sources */ = {
@@ -715,6 +722,7 @@
 		};
 		0418E86D2427654900583DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5BE7516ED2BC01BCDA6771 /* Pods-Thanos.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -734,7 +742,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC ";
 				PRODUCT_BUNDLE_IDENTIFIER = benguyen.edu.Thanos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -745,6 +752,7 @@
 		};
 		0418E86E2427654900583DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457703466CC7A8212EBD00B3 /* Pods-Thanos.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -764,7 +772,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC ";
 				PRODUCT_BUNDLE_IDENTIFIER = benguyen.edu.Thanos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

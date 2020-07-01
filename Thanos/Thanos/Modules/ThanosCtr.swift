@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
-open class ThanosCtr: UIViewController {
+open class ThanosCtr: UIViewController{
+    
     var isEnableAdmod = false {
         didSet {
             if isEnableAdmod {
@@ -32,17 +33,17 @@ open class ThanosCtr: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        isEnableAdmod = true
+        isEnableAdmod = false
         interstitial = createAndLoadInterstitial()
     }
     
-    public func showAdmodInterstital() {
+    open func showAdmodInterstital() {
         if interstitial.isReady {
             let requestAd = UserDefaults.standard.integer(forKey: "Request_Ad")
             if requestAd == 0 {
                 interstitial.present(fromRootViewController: self)
                 UserDefaults.standard.set(requestAd + 1, forKey: "Request_Ad")
-            } else if requestAd >= 5 {
+            } else if requestAd >= 8 {
                 UserDefaults.standard.set(0, forKey: "Request_Ad")
             } else {
                 UserDefaults.standard.set(requestAd + 1, forKey: "Request_Ad")
@@ -52,7 +53,7 @@ open class ThanosCtr: UIViewController {
         }
     }
     
-    public func showAdmodBanner() {
+    open func showAdmodBanner() {
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView.adUnitID = bannerId
         bannerView.rootViewController = self
@@ -161,10 +162,12 @@ extension ThanosCtr: GADInterstitialDelegate {
     }
     
     /// Tells the delegate that a user click will open another app
+    /// (such as the App Store), backgrounding the current app.
     public func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
         print("interstitialWillLeaveApplication")
     }
 }
+
 
 extension UIViewController {
     open func present(_ vc: UIViewController) {
