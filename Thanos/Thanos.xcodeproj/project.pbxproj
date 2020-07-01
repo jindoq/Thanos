@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,6 +99,15 @@
 		043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DD242F8814009D0DA5 /* ThanosGridView.swift */; };
 		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
+		29E9CD0F24AC8B5300935BDC /* Promises-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */; };
+		29E9CD1024AC8B5300935BDC /* NanoPB-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */; };
+		29E9CD1124AC8B5300935BDC /* OpenMeasurement-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */; };
+		29E9CD1224AC8B5300935BDC /* GoogleUtilities-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */; };
+		29E9CD1324AC8B5300935BDC /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */; };
+		29E9CD1424AC8B5300935BDC /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */; };
+		29E9CD1524AC8B5300935BDC /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */; };
+		29E9CD1724AC8B5300935BDC /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */; };
+		29E9CD1924AC912F00935BDC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +205,15 @@
 		043608DD242F8814009D0DA5 /* ThanosGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridView.swift; sourceTree = "<group>"; };
 		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
+		29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
+		29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
+		29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +221,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E9CD1524AC8B5300935BDC /* nanopb.xcframework in Frameworks */,
+				29E9CD1324AC8B5300935BDC /* GoogleUtilities.xcframework in Frameworks */,
+				29E9CD1924AC912F00935BDC /* GoogleMobileAds.framework in Frameworks */,
+				29E9CD1724AC8B5300935BDC /* GoogleAppMeasurement.framework in Frameworks */,
+				29E9CD1424AC8B5300935BDC /* PromisesObjC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +251,12 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
+				29E9CD1824AC912F00935BDC /* GoogleMobileAds.framework */,
+				29E9CD0E24AC8B5300935BDC /* GoogleAppMeasurement.framework */,
+				29E9CD0A24AC8B4F00935BDC /* GoogleUtilities.xcframework */,
+				29E9CD0524AC8B4F00935BDC /* Licenses */,
+				29E9CD0C24AC8B5000935BDC /* nanopb.xcframework */,
+				29E9CD0B24AC8B5000935BDC /* PromisesObjC.xcframework */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
 				0418E90D2427661100583DCD /* Network */,
@@ -373,6 +402,17 @@
 			path = PMAlert;
 			sourceTree = "<group>";
 		};
+		29E9CD0524AC8B4F00935BDC /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				29E9CD0624AC8B4F00935BDC /* Promises-LICENSE */,
+				29E9CD0724AC8B4F00935BDC /* NanoPB-LICENSE */,
+				29E9CD0824AC8B4F00935BDC /* OpenMeasurement-LICENSE */,
+				29E9CD0924AC8B4F00935BDC /* GoogleUtilities-LICENSE */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -444,7 +484,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E9CD1224AC8B5300935BDC /* GoogleUtilities-LICENSE in Resources */,
+				29E9CD1124AC8B5300935BDC /* OpenMeasurement-LICENSE in Resources */,
+				29E9CD1024AC8B5300935BDC /* NanoPB-LICENSE in Resources */,
 				04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */,
+				29E9CD0F24AC8B5300935BDC /* Promises-LICENSE in Resources */,
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +722,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Thanos",
+				);
 				INFOPLIST_FILE = Thanos/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -686,6 +734,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC ";
 				PRODUCT_BUNDLE_IDENTIFIER = benguyen.edu.Thanos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -703,6 +752,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Thanos",
+				);
 				INFOPLIST_FILE = Thanos/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -711,6 +764,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC ";
 				PRODUCT_BUNDLE_IDENTIFIER = benguyen.edu.Thanos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
