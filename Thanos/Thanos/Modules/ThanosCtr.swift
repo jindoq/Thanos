@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
 open class ThanosCtr: UIViewController {
     open func setupAds() {
