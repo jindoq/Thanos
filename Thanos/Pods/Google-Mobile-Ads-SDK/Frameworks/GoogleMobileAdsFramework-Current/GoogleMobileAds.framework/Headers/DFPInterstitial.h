@@ -5,7 +5,7 @@
 //  Copyright 2012 Google LLC. All rights reserved.
 //
 
-#import "DFPCustomRenderedInterstitialDelegate.h"
+#import "GoogleMobileAds/DFPCustomRenderedInterstitialDelegate.h"
 #import <GoogleMobileAds/GADAppEventDelegate.h>
 #import <GoogleMobileAds/GADInterstitial.h>
 
