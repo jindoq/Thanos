@@ -6,5 +6,5 @@ target 'Thanos' do
   use_frameworks!
 
   # Pods for Thanos
-  pod 'Google-Mobile-Ads-SDK'
+#  pod 'Google-Mobile-Ads-SDK'
 end
