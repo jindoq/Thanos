@@ -5,7 +5,7 @@
 //  Copyright 2012 Google LLC. All rights reserved.
 //
 
-#import <GoogleMobileAds/DFPCustomRenderedBannerViewDelegate.h>
+#import "GoogleMobileAds/DFPCustomRenderedBannerViewDelegate.h"
 #import <GoogleMobileAds/GADAdLoader.h>
 #import <GoogleMobileAds/GADAdLoaderDelegate.h>
 #import <GoogleMobileAds/GADAppEventDelegate.h>
