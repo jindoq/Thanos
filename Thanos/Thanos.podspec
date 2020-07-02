@@ -124,7 +124,8 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+  spec.framework  = "GoogleMobileAds"
+  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
