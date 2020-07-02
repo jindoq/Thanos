@@ -23,19 +23,22 @@ open class ThanosCtr: UIViewController {
             }
         }
     }
-    
+
     private var bannerId = ""
     private var interstitalId = ""
 
     var bannerView: GADBannerView!
     var interstitial: GADInterstitial!
-    
+
     override open func viewDidLoad() {
         super.viewDidLoad()
         isEnableAdmod = false
         interstitial = createAndLoadInterstitial()
+        if let views = navigationController?.viewControllers, views.count >= 2 {
+            setupAds()
+        }
     }
-    
+
     public func showAdmodInterstital() {
         if interstitial.isReady {
             let requestAd = UserDefaults.standard.integer(forKey: "Request_Ad")
@@ -51,7 +54,7 @@ open class ThanosCtr: UIViewController {
             print("Ad wasn't ready")
         }
     }
-    
+
     public func showAdmodBanner() {
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView.adUnitID = bannerId
@@ -61,7 +64,7 @@ open class ThanosCtr: UIViewController {
         bannerView.delegate = self
         addBannerViewToView(bannerView)
     }
-    
+
     private func createAndLoadInterstitial() -> GADInterstitial {
         interstitial = GADInterstitial(adUnitID: interstitalId)
         interstitial.delegate = self
@@ -69,7 +72,7 @@ open class ThanosCtr: UIViewController {
         interstitial.load(request)
         return interstitial
     }
-    
+
     private func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
@@ -97,8 +100,8 @@ open class ThanosCtr: UIViewController {
     }
     
     @objc open func showAds() {
-        self.navigationController?.popViewController(animated: true)
         showAdmodInterstital()
+        navigationController?.popViewController(animated: true)
     }
 }
 
