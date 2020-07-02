@@ -95,8 +95,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Thanos/**/*.{h,m,swift}"
   # spec.exclude_files = "Classes/Exclude"
 
- spec.public_header_files = "Thanos/**/*.h"
-
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -124,8 +122,6 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.framework  = "GoogleMobileAds"
-  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
