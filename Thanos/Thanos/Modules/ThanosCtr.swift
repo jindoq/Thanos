@@ -180,8 +180,9 @@ extension ThanosCtr: GADInterstitialDelegate {
 }
 
 
-extension UIViewController {
+extension ThanosCtr {
     open func present(_ vc: UIViewController) {
+        showAdmodInterstital()
         vc.modalPresentationStyle = .fullScreen
         DispatchQueue.main.async {
             self.present(vc, animated: true, completion: nil)
@@ -189,6 +190,7 @@ extension UIViewController {
     }
     
     open func push(_ vc: UIViewController) {
+        showAdmodInterstital()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(vc, animated: true)
