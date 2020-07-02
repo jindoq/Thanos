@@ -99,6 +99,9 @@
 		043608DF242F8814009D0DA5 /* ThanosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043608DD242F8814009D0DA5 /* ThanosGridView.swift */; };
 		04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */; };
 		29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */; };
+		29E9CE5A24ADE97400935BDC /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9CE5924ADE97400935BDC /* IAPHelper.swift */; };
+		29E9CE5D24ADEA0500935BDC /* IAPCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9CE5B24ADEA0500935BDC /* IAPCtr.swift */; };
+		29E9CE5E24ADEA0500935BDC /* IAPCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E9CE5C24ADEA0500935BDC /* IAPCtr.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +199,9 @@
 		043608DD242F8814009D0DA5 /* ThanosGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGridView.swift; sourceTree = "<group>"; };
 		04A8C4CE242BA4C800FF21F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D936ED242B709C00A9CC42 /* ThanosHeaderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosHeaderListView.swift; sourceTree = "<group>"; };
+		29E9CE5924ADE97400935BDC /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		29E9CE5B24ADEA0500935BDC /* IAPCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPCtr.swift; sourceTree = "<group>"; };
+		29E9CE5C24ADEA0500935BDC /* IAPCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAPCtr.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
+				29E9CE5824ADE96B00935BDC /* InAppPurchase */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
 				0418E90D2427661100583DCD /* Network */,
@@ -373,6 +380,16 @@
 			path = PMAlert;
 			sourceTree = "<group>";
 		};
+		29E9CE5824ADE96B00935BDC /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				29E9CE5B24ADEA0500935BDC /* IAPCtr.swift */,
+				29E9CE5C24ADEA0500935BDC /* IAPCtr.xib */,
+				29E9CE5924ADE97400935BDC /* IAPHelper.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -445,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A8C4CF242BA4C800FF21F1 /* Assets.xcassets in Resources */,
+				29E9CE5E24ADEA0500935BDC /* IAPCtr.xib in Resources */,
 				0423141524283680007A0621 /* PMAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +486,7 @@
 				0418E9162427661100583DCD /* ThanosListCell.swift in Sources */,
 				0418E8F12427659500583DCD /* ConstraintRelation.swift in Sources */,
 				0418E91F2427661100583DCD /* ThanosWorker.swift in Sources */,
+				29E9CE5D24ADEA0500935BDC /* IAPCtr.swift in Sources */,
 				29D936EE242B709C00A9CC42 /* ThanosHeaderListView.swift in Sources */,
 				0418E8E52427659500583DCD /* ConstraintDirectionalInsetTarget.swift in Sources */,
 				0418E8E42427659500583DCD /* ConstraintInsetTarget.swift in Sources */,
@@ -500,6 +519,7 @@
 				0418E8F52427659500583DCD /* Constraint.swift in Sources */,
 				0418E8EB2427659500583DCD /* ConstraintLayoutSupport.swift in Sources */,
 				0418E8D72427659500583DCD /* SessionDelegate.swift in Sources */,
+				29E9CE5A24ADE97400935BDC /* IAPHelper.swift in Sources */,
 				0418E8C32427659500583DCD /* AFError.swift in Sources */,
 				0418E8BC2427659500583DCD /* Session.swift in Sources */,
 				0418E9112427661100583DCD /* UIColor-Extension.swift in Sources */,
