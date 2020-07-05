@@ -34,7 +34,11 @@ open class ThanosCtr: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         isEnableAdmod = false
-        interstitial = createAndLoadInterstitial()
+        
+        if !IAPProducts.store.isProductPurchased(IAPProducts.removeAds) {
+            interstitial = createAndLoadInterstitial()
+        }
+        
         if let views = navigationController?.viewControllers, views.count >= 2 {
             setupAds()
         } else {
@@ -43,6 +47,10 @@ open class ThanosCtr: UIViewController {
     }
 
     public func showAdmodInterstital() {
+        guard !IAPProducts.store.isProductPurchased(IAPProducts.removeAds) else {
+            return
+        }
+        
         if interstitial.isReady {
             let requestAd = UserDefaults.standard.integer(forKey: "Request_Ad")
             if requestAd == 0 {
@@ -59,6 +67,10 @@ open class ThanosCtr: UIViewController {
     }
 
     public func showAdmodBanner() {
+        guard !IAPProducts.store.isProductPurchased(IAPProducts.removeAds) else {
+            return
+        }
+        
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView.adUnitID = bannerId
         bannerView.rootViewController = self
