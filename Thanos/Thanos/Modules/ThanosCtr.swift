@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 import GoogleMobileAds
 
 open class ThanosCtr: UIViewController {
@@ -36,6 +37,8 @@ open class ThanosCtr: UIViewController {
         interstitial = createAndLoadInterstitial()
         if let views = navigationController?.viewControllers, views.count >= 2 {
             setupAds()
+        } else {
+            setupSetting()
         }
     }
 
@@ -103,13 +106,20 @@ open class ThanosCtr: UIViewController {
         showAdmodInterstital()
         navigationController?.popViewController(animated: true)
     }
-    
-    open func openShop() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_shop", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(shopping))
+
+    open func setupSetting() {
+        let shopBtn = UIBarButtonItem(image: UIImage(named: "ic_shop", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(shoppingAction))
+        let settingBtn = UIBarButtonItem(image: UIImage(named: "ic_setting", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(settingAction))
+        navigationItem.rightBarButtonItems = [settingBtn, shopBtn]
+    }
+
+    @objc open func shoppingAction() {
+        let vc = IAPCtr()
+        push(vc)
     }
     
-    @objc open func shopping() {
-        let vc = IAPCtr()
+    @objc open func settingAction() {
+        let vc = SettingCtr()
         push(vc)
     }
 }

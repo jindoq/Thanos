@@ -92,6 +92,7 @@
 		0418E91F2427661100583DCD /* ThanosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E90F2427661100583DCD /* ThanosWorker.swift */; };
 		0418E9202427661100583DCD /* ThanosError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E9102427661100583DCD /* ThanosError.swift */; };
 		0418E922242766E700583DCD /* UIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418E921242766E600583DCD /* UIMaker.swift */; };
+		0419219524B17B0C006CAB8E /* SettingCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419219424B17B0C006CAB8E /* SettingCtr.swift */; };
 		0423141324283680007A0621 /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141024283680007A0621 /* PMAlertAction.swift */; };
 		0423141424283680007A0621 /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423141124283680007A0621 /* PMAlertController.swift */; };
 		0423141524283680007A0621 /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423141224283680007A0621 /* PMAlertController.xib */; };
@@ -192,6 +193,7 @@
 		0418E90F2427661100583DCD /* ThanosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosWorker.swift; sourceTree = "<group>"; };
 		0418E9102427661100583DCD /* ThanosError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosError.swift; sourceTree = "<group>"; };
 		0418E921242766E600583DCD /* UIMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMaker.swift; sourceTree = "<group>"; };
+		0419219424B17B0C006CAB8E /* SettingCtr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCtr.swift; sourceTree = "<group>"; };
 		0423141024283680007A0621 /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		0423141124283680007A0621 /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0423141224283680007A0621 /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		0418E8662427654900583DCD /* Thanos */ = {
 			isa = PBXGroup;
 			children = (
+				0419219324B17AF7006CAB8E /* Setting */,
 				29E9CE5824ADE96B00935BDC /* InAppPurchase */,
 				0418E8FE2427661100583DCD /* Libs */,
 				0418E9042427661100583DCD /* Modules */,
@@ -368,6 +371,14 @@
 				0418E9102427661100583DCD /* ThanosError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0419219324B17AF7006CAB8E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0419219424B17B0C006CAB8E /* SettingCtr.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		0423140F24283680007A0621 /* PMAlert */ = {
@@ -542,6 +553,7 @@
 				0418E8CE2427659500583DCD /* Response.swift in Sources */,
 				0418E8DD2427659500583DCD /* ConstraintViewDSL.swift in Sources */,
 				0418E8DF2427659500583DCD /* ConstraintInsets.swift in Sources */,
+				0419219524B17B0C006CAB8E /* SettingCtr.swift in Sources */,
 				0418E8D92427659500583DCD /* LayoutConstraintItem.swift in Sources */,
 				0418E8D52427659500583DCD /* ResponseSerialization.swift in Sources */,
 				0418E8B82427659500583DCD /* RequestInterceptor.swift in Sources */,

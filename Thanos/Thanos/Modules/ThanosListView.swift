@@ -20,6 +20,7 @@ open class ThanosListView<C: ThanosListCell<T>, T>: ThanosCtr, UITableViewDataSo
         tb.register(C.self, forCellReuseIdentifier: "Cell")
         tb.rowHeight = UITableView.automaticDimension
         tb.estimatedRowHeight = 500
+        tb.tableFooterView = UIView()
         return tb
     }()
     

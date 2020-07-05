@@ -21,6 +21,7 @@ open class ThanosHeaderListView<H: ThanosListHeader<B>, B, C: ThanosListCell<T>,
         tb.register(H.self, forHeaderFooterViewReuseIdentifier: "Header")
         tb.rowHeight = UITableView.automaticDimension
         tb.estimatedRowHeight = 500
+        tb.tableFooterView = UIView()
         return tb
     }()
     
