@@ -10,26 +10,16 @@ import UIKit
 import StoreKit
 
 class IAPCtr: ThanosListView<IAPCell, SKProduct>, UITextFieldDelegate {
-    lazy var bgIcon: UIImageView = {
-        let ic = UIImageView()
-        ic.contentMode = .scaleToFill
-        return ic
-    }()
-    
     var alert: PMAlertController?
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Restore", style: .done, target: self, action: #selector(restoreAction))
-        view.addSubviews(bgIcon, table)
+        view.addSubviews(table)
         view.backgroundColor = .white
         table.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
-        
-        bgIcon.image = UIImage(named: "bg_iap", in: Bundle(for: ThanosCtr.self), compatibleWith: nil)
-        bgIcon.snp.makeConstraints { (maker) in
-            maker.edges.equalToSuperview()
-        }
+        table.backgroundColor = UIColor.Thanos.superLightGray
         
         IAPProducts.store.requestProducts { (success, products) in
             if success, let arr = products {

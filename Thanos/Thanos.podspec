@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Thanos"
-  spec.version      = "0.0.27"
+  spec.version      = "0.0.28"
   spec.summary      = "The power of Thanos."
 
   # This description is used to generate tags and improve search results.
