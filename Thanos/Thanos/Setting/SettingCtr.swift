@@ -12,8 +12,8 @@ import StoreKit
 
 fileprivate let APP_ID = ""
 fileprivate let APPSTORE_APP = "itms-apps://itunes.apple.com/app/id\(APP_ID)"
-class SettingCtr: ThanosListView<SettingCell, String> {
-    override func viewDidLoad() {
+open class SettingCtr: ThanosListView<SettingCell, String> {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         view.addSubviews(table)
         table.snp.makeConstraints { (maker) in
@@ -23,7 +23,7 @@ class SettingCtr: ThanosListView<SettingCell, String> {
         datasource = ["Rate 5*", "Feed back", "More apps"]
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             if #available(iOS 10.3, *) {
@@ -63,13 +63,13 @@ class SettingCtr: ThanosListView<SettingCell, String> {
     }
 }
 
-class SettingCell: ThanosListCell<String> {
-    lazy var titleLbl: UILabel = {
+open class SettingCell: ThanosListCell<String> {
+    open lazy var titleLbl: UILabel = {
         let lbl = UIMaker.makeTitleLbl()
         return lbl
     }()
     
-    override func setupView() {
+    override open func setupView() {
         super.setupView()
         addSubviews(titleLbl)
         titleLbl.snp.makeConstraints { (maker) in
@@ -77,7 +77,7 @@ class SettingCell: ThanosListCell<String> {
         }
     }
     
-    override func configCell(_ data: String) {
+    override open func configCell(_ data: String) {
         titleLbl.text = data
     }
 }
