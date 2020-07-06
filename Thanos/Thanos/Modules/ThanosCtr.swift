@@ -28,6 +28,7 @@ open class ThanosCtr: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         isEnableAdmod = false
+        view.backgroundColor = .white
         
         if let views = navigationController?.viewControllers, views.count >= 2 {
             setupAds()
@@ -85,7 +86,8 @@ open class ThanosCtr: UIViewController {
     open func setupSetting() {
         let shopBtn = UIBarButtonItem(image: UIImage(named: "ic_shop", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(shoppingAction))
         let settingBtn = UIBarButtonItem(image: UIImage(named: "ic_setting", in: Bundle(for: ThanosCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(settingAction))
-        navigationItem.rightBarButtonItems = [settingBtn, shopBtn]
+        navigationItem.rightBarButtonItem = shopBtn
+        navigationItem.leftBarButtonItem = settingBtn
     }
 
     @objc open func shoppingAction() {

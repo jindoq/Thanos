@@ -21,6 +21,7 @@ class IAPCtr: ThanosListView<IAPCell, SKProduct>, UITextFieldDelegate {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Restore", style: .done, target: self, action: #selector(restoreAction))
         view.addSubviews(bgIcon, table)
+        view.backgroundColor = .white
         table.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }

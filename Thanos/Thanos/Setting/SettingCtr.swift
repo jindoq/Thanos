@@ -16,6 +16,7 @@ open class SettingCtr: ThanosListView<SettingCell, String> {
     override open func viewDidLoad() {
         super.viewDidLoad()
         view.addSubviews(table)
+        view.backgroundColor = .white
         table.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
