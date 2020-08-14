@@ -34,6 +34,14 @@ open class ThanosCtr: UIViewController {
             setupAds()
         }
     }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let banner = bannerView {
+            banner.isHidden = IAPProducts.store.isProductPurchased(IAPProducts.removeAds)
+        }
+    }
 
     public func showAdmodBanner() {
         guard !IAPProducts.store.isProductPurchased(IAPProducts.removeAds) else {
