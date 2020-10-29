@@ -149,6 +149,8 @@ extension IAPHelper: SKPaymentTransactionObserver {
         break
       case .purchasing:
         break
+      default:
+        break
       }
     }
   }

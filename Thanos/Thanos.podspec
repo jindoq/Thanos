@@ -68,6 +68,10 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS' => 'arm64' }
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS' => 'arm64'}
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.ios.deployment_target = "10.0"
   spec.swift_version = "5"
   # spec.osx.deployment_target = "10.7"
@@ -141,7 +145,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.static_framework = true
-  spec.dependency "Google-Mobile-Ads-SDK"
+  # spec.static_framework = true
+  # spec.dependency 'Google-Mobile-Ads-SDK'
 
 end
