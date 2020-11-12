@@ -33,11 +33,7 @@ open class SettingCtr: ThanosListView<SettingCell, String> {
                 if let url = URL(string: APPSTORE_APP),
                     UIApplication.shared.canOpenURL(url)
                 {
-                    if #available(iOS 10.0, *) {
-                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                    } else {
-                        UIApplication.shared.openURL(url)
-                    }
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 }
             }
         case 1:
